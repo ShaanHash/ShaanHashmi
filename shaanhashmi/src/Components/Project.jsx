@@ -9,9 +9,11 @@ const Project = (props) => {
       <div className="project-side-right">
         <div className="dark-sub-header-1">{props.header}</div>
         <div className="dark-sub-text">{props.desc}</div>
-        <a href={props.link}>
-          <div className="contact-button">Link</div>
-        </a>
+        <div>
+          <a href={props.link}>
+            <div className="contact-button">Link</div>
+          </a>
+        </div>
       </div>
     </div>
   );

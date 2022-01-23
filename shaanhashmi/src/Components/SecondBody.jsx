@@ -27,9 +27,9 @@ const SecondBody = () => {
             Web Applications that leads to the success of the overall product.
             Check out some of my work in the Projects section.{" "}
           </div>
-          <div>
-            <div className="contact-button">Contact Me</div>
-          </div>
+          <a href="index.html">
+            <div className="contact-button">Resume</div>
+          </a>
         </div>
         <div className="col-container-right">
           <div className="dark-sub-header">Technical Skill Set:</div>

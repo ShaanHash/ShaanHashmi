@@ -1,3 +1,9 @@
+/* Higher Level CSS Rules */
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 html {
   font-size: 12px;
 }
@@ -18,8 +24,14 @@ code {
 
 a {
   text-decoration: none;
+  transition: 0.1s all ease;
 }
 
+a:hover {
+  transform: scale(0.95);
+}
+
+/* CSS Rules for Hamburger Menu */
 nav {
   flex-direction: row;
   flex-wrap: wrap;
@@ -40,6 +52,7 @@ label {
   display: none;
 }
 
+/* Media Breakpoint for small screens */
 @media screen and (max-width: 605px) {
   label {
     display: flex;
@@ -52,7 +65,7 @@ label {
     display: flex;
     position: absolute;
     left: 0px;
-    top: 14vh;
+    top: calc(7rem + 0vh);
     text-align: center;
     width: 100%;
     display: none;
@@ -107,6 +120,55 @@ label {
   }
 }
 
+/* Main Body Containers */
+.first-body {
+  height: 74vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.second-body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+}
+
+.third-body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fourth-body {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* CSS Related to the header and navbar */
 .header-container {
   display: flex;
   flex-direction: row;
@@ -116,6 +178,14 @@ label {
   height: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.left-group {
+  display: flex;
+}
+
+.right-group {
+  display: flex;
 }
 
 .prof-img {
@@ -132,6 +202,12 @@ label {
   gap: 3rem;
 }
 
+.contact-container {
+  display: flex;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
 .social-link {
   display: flex;
   align-items: center;
@@ -143,10 +219,11 @@ label {
   background-color: rgba(51, 51, 51, 0.315);
 }
 
+/* CSS Related to various text formats */
+
 .header-name {
   display: flex;
   align-items: center;
-  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: min(1.5rem, 5vw);
@@ -154,7 +231,6 @@ label {
 }
 
 .body-header {
-  font-family: "Source Sans Pro", sans-serif;
   font-size: min(5rem, 5vw);
   color: white;
   font-weight: 900;
@@ -163,7 +239,6 @@ label {
 
 .second-header {
   padding-top: 2rem;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: min(3rem, 5vw);
   font-weight: 600;
   color: #333;
@@ -182,23 +257,42 @@ label {
   border-radius: 5px;
 }
 
+.third-header {
+  padding-top: 2rem;
+  font-size: min(3rem, 5vw);
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 2px 8px #696969;
+}
+
+.third-header::after {
+  content: "";
+  position: relative;
+  display: block;
+  top: 1rem;
+  height: 5px;
+  width: 5rem;
+  background: white;
+  box-shadow: 2px 2px 8px #696969;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
 .dark-body {
   margin-top: 3rem;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: min(1.6rem, 5vw);
   color: rgb(75, 75, 75);
   text-align: center;
 }
 
 .dark-sub-header {
-  font-family: "Source Sans Pro", sans-serif;
   font-size: min(1.7rem, 5vw);
   color: #333;
   font-weight: 700;
 }
 
 .dark-sub-header-1 {
-  font-family: "Source Sans Pro", sans-serif;
   font-size: min(2rem, 5vw);
   color: #333;
   font-weight: 700;
@@ -206,7 +300,6 @@ label {
 
 .dark-sub-text {
   margin-top: 1rem;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: min(1.4rem, 5vw);
   color: #333;
   font-weight: 400;
@@ -216,13 +309,14 @@ label {
 .body-sub {
   margin-top: 1rem;
   text-shadow: 3px 3px 8px #696969;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: min(1.7rem, 5vw);
   color: white;
   font-weight: 600;
   text-align: center;
   width: 35vw;
 }
+
+/* CSS Related to the various skills */
 
 .skills-container {
   display: flex;
@@ -232,7 +326,6 @@ label {
 }
 
 .skill {
-  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,9 +345,9 @@ label {
   gap: 3rem;
 }
 
+/* CSS Related to Buttons */
 .portfolio-button {
   margin-top: 2rem;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: min(1.6rem, 5vw);
   font-weight: 600;
   letter-spacing: 2px;
@@ -266,11 +359,11 @@ label {
   padding-left: 4rem;
   padding-right: 4rem;
   border-radius: 8px;
+  user-select: none;
 }
 
 .contact-button {
   margin-top: 2rem;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: min(1.6rem, 5vw);
   font-weight: 600;
   letter-spacing: 2px;
@@ -284,49 +377,22 @@ label {
   background-color: #5faf4c;
   text-align: center;
   width: 10rem;
+  user-select: none;
+  transition: 0.1s ease all;
 }
 
-.left-group {
-  display: flex;
-}
-
-.right-group {
-  display: flex;
+.contact-button:hover {
+  transform: scale(0.95);
 }
 
 .link-text {
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.3rem;
   color: #333;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
-.first-body {
-  height: 74vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.second-body {
-  padding-top: 3 rem;
-  padding-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(250, 250, 250);
-}
-
-.third-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* Project Related CSS */
 .project-list {
   margin-top: 3rem;
   display: grid;
@@ -367,6 +433,7 @@ label {
   width: 100%;
 }
 
+/* Generic CSS properties for ease */
 .ms-1 {
   margin-left: 1rem;
 }
@@ -390,7 +457,3 @@ label {
 .gap-4 {
   gap: 5rem;
 }
-
-/* * {
-  outline: 1px solid red;
-} */
