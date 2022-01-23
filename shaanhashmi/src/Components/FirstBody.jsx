@@ -14,14 +14,14 @@ const FirstBody = () => {
         A Technology Professional with over 5 Years of industry experience.
         Currently specializing in Full Stack Development
       </div>
-      <a href="index.html">
+      <a href="#port">
         <div className="portfolio-button">PROJECTS</div>
       </a>
       <div className="link-row">
-        <a href="index.html">
+        <a href="https://github.com/ShaanHash/">
           <img src={git} alt="" className="social-link"></img>
         </a>
-        <a href="index.html">
+        <a href="https://www.linkedin.com/in/shaanhashmi/">
           <img src={linked} alt="" className="social-link"></img>
         </a>
       </div>

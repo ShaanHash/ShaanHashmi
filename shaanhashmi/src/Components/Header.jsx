@@ -1,11 +1,12 @@
 import React from "react";
+import pfp from "./../Images/pfp.png";
 
 const Header = () => {
   return (
-    <div className="header-container">
+    <div className="header-container" id="home">
       <div className="left-group ms-4 gap-1">
         <img
-          src={"https://loremflickr.com/32/32"}
+          src={pfp}
           alt=""
           className="prof-img"
         ></img>
@@ -17,16 +18,16 @@ const Header = () => {
         </label>
         <input type="checkbox" id="toggle"></input>
         <div className="menu">
-          <a href="index.html" className="link-text">
+          <a href="#home" className="link-text">
             HOME
           </a>
-          <a href="index.html" className="link-text">
+          <a href="#about" className="link-text">
             ABOUT
           </a>
-          <a href="index.html" className="link-text">
+          <a href="#port" className="link-text">
             PROJECTS
           </a>
-          <a href="index.html" className="link-text">
+          <a href="#contact" className="link-text">
             CONTACT
           </a>
         </div>

@@ -11,7 +11,7 @@ const Project = (props) => {
         <div className="dark-sub-text">{props.desc}</div>
         <div>
           <a href={props.link}>
-            <div className="contact-button">Link</div>
+            <div className="contact-button">REPOSITORY</div>
           </a>
         </div>
       </div>

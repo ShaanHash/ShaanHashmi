@@ -2,6 +2,7 @@
 
 * {
   font-family: "Source Sans Pro", sans-serif;
+  /* outline: 1px solid red; */
 }
 
 html {
@@ -80,6 +81,9 @@ label {
     color: black;
     background-color: white;
     font-size: 1.25rem;
+  }
+  .menu a:hover {
+    transform: none !important;
   }
   .menu a:last-child {
     box-shadow: 1px 5px rgba(128, 128, 128, 0.158);
@@ -193,7 +197,10 @@ label {
   border-radius: 100%;
   min-height: 3rem;
   height: 3vw;
-  max-height: 4rem;
+  width: 3vw;
+  min-width: 4rem;
+  min-height: 4rem;
+  background-color: #aed57c;
 }
 
 .link-row {

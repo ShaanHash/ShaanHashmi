@@ -4,7 +4,7 @@ import ff from "./../Images/fashionforecast.png";
 
 const ThirdBody = () => {
   return (
-    <div className="third-body">
+    <div className="third-body" id="port">
       <div className="second-header">Portfolio</div>
       <div className="dark-body">
         Here you can find a list of projects that I have designed and built
@@ -14,10 +14,10 @@ const ThirdBody = () => {
           <Project
             header="Fashion Forecast"
             desc="Fashion Forecast was designed to solve a unique problem. 
-            This application allows users to sign-up to recieve daily text-alerts on whatever schedule they preffered.
+            This application allows users to sign-up to receive daily text-alerts on whatever schedule they preferred.
             These text-alerts would inform the user about what to wear for the weather and not what the weather is outside. 
             Focus on your day, and not the weather."
-            link="index.html"
+            link="https://github.com/ShaanHash/FashionForecast"
             source={ff}
           />
         </div>
