@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b2e72db.css",
+    "main.js": "/static/js/main.f9b4bd58.js",
+    "static/media/bg.jpg": "/static/media/bg.159b7e548087fe8f3905.jpg",
+    "static/media/pfp.png": "/static/media/pfp.723bab617316d1173aa8.png",
+    "static/media/fashionforecast.png": "/static/media/fashionforecast.8c69cbe4de371e50a25a.png",
+    "static/media/Shaan H - CV 2022.pdf": "/static/media/Shaan H - CV 2022.906566570c191a3d89a2.pdf",
+    "static/media/cv.png": "/static/media/cv.f9748f01499ca5e0d2ec.png",
+    "static/media/mail.png": "/static/media/mail.ba0b75a82a4586f21551.png",
+    "static/media/github-ico.png": "/static/media/github-ico.2062410128c759426307.png",
+    "index.html": "/index.html",
+    "main.7b2e72db.css.map": "/static/css/main.7b2e72db.css.map",
+    "main.f9b4bd58.js.map": "/static/js/main.f9b4bd58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b2e72db.css",
+    "static/js/main.f9b4bd58.js"
+  ]
+}
